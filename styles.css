@@ -1,0 +1,174 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  color: #111;
+}
+
+/* CONTAINER */
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: #ff7070;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 36px;
+}
+
+.navigation a {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 36px;
+}
+
+/* HERO */
+.hero-section {
+  background: linear-gradient(90deg, #fff2c7, #ffd6e6, #ffcfff);
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.hero-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  max-width: 520px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.primary-button {
+  display: inline-block;
+  background: #ff7070;
+  color: #fff;
+  padding: 12px 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* GALLERY */
+.gallery-section {
+  background: linear-gradient(90deg, #fff2c7, #ffd6e6, #ffcfff);
+  padding: 80px 0;
+}
+
+.gallery-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* IMAGE GRID — EXACT PDF MATCH */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 18px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TALL IMAGE (img4.jpg on RIGHT) */
+.image-grid .image-tall {
+  grid-row: span 2;
+  height: 380px;
+}
+
+/* CARD */
+.gallery-card {
+  background: #ff7070;
+  padding: 40px;
+  max-width: 420px;
+}
+
+.card-subtitle {
+  font-size: 0.85rem;
+}
+
+.card-title {
+  margin: 18px 0;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+.card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
+.card-action img {
+  width: 26px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-wrapper,
+  .gallery-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+
+  .image-grid .image-tall {
+    height: 300px;
+  }
+}
